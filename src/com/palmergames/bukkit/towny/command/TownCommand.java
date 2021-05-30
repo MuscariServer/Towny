@@ -789,7 +789,6 @@ public class TownCommand extends BaseCommand implements CommandExecutor {
 
 				} else if (TownyCommandAddonAPI.hasCommand(CommandType.TOWN, split[0])) {
 					TownyCommandAddonAPI.getAddonCommand(CommandType.TOWN, split[0]).run(player, null, "town", split);
-
 				} else {
 					/*
 					 * We've gotten this far without a match, check if the argument is a town name.
@@ -2264,7 +2263,6 @@ public class TownCommand extends BaseCommand implements CommandExecutor {
 					
 				} else if (TownyCommandAddonAPI.hasCommand(CommandType.TOWN_SET, split[0])) {
 					TownyCommandAddonAPI.getAddonCommand(CommandType.TOWN_SET, split[0]).run(player, null, "town", split);
-
 				} else {
 					TownyMessaging.sendErrorMsg(player, Translation.of("msg_err_invalid_property", "town"));
 					return;

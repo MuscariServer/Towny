@@ -702,7 +702,6 @@ public class PlotCommand extends BaseCommand implements CommandExecutor {
 								}
 							}
 							return true;
-
 						} else if (TownyCommandAddonAPI.hasCommand(CommandType.PLOT_SET, split[0])) {
 							TownyCommandAddonAPI.getAddonCommand(CommandType.PLOT_SET, split[0]).run(player, null, "plot", split);
 							return true;
