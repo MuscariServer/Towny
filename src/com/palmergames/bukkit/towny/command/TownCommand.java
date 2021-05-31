@@ -2709,7 +2709,7 @@ public class TownCommand extends BaseCommand implements CommandExecutor {
 				throw new TownyException(event.getCancelMessage());
 
 			Confirmation.runOnAccept(() -> {
-				if (resident.isJailed() && resident.getJailTown().getName().equals(town.getName()))
+				if (resident.isJailed() && resident.getJailTown().getUUID().equals(town.getUUID()))
 					JailUtil.unJailResident(resident, UnJailReason.LEFT_TOWN);
 
 				try {
